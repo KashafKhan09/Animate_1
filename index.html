@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+      .bounce {
+        animation-duration: 1s;
+        animation-name: fadeInUp;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-delay: 1s;
+}
+  .bounce2{
+    animation-duration: 3s;
+    animation-name: fadeInUp;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-delay:   3s;
+  }
+  .bounce3{
+    animation-duration: 4s;
+    animation-name: fadeInUp;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-delay:   4s;
+  }
+  .bounce4{
+    animation-duration: 5s;
+    animation-name: fadeInUp;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-delay:   5s;
+  }
+  @keyframes fadeInUp {
+      from{
+        margin-top: 100%;
+        width: 300%;
+      }
+      to{
+        margin-top: 0%;
+        width: 100%;
+      }
+  }
+    </style>
+</head>
+<body>
+  <p>
+    In addition, we output some text each time an animation event fires, so you
+    can see them in action.
+  </p>
+   <ul>
+    <li class="bounce">Started: elapsed time is 0</li>
+    <li class="bounce2">New loop started at time 3.01200008392334</li>
+    <li class="bounce3">New loop started at time 6.00600004196167</li>
+    <li class="bounce4">Ended: elapsed time is 9.234000205993652</li>
+   </ul>  
+</body>
+</html>
